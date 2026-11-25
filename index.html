@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pocetna</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700;900&display=block" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f4f7f5;
+    color: #333333;
+    line-height: 1.7;
+}
+
+.header {
+    background-color: #2f5d50;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 42px;
+    margin: 0 0 10px 0;
+}
+
+.header p {
+    font-size: 18px;
+    margin: 0;
+    opacity: 0.85;
+}
+
+.nav {
+    background-color: #24483e;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.section h1 {
+    font-family: 'Merriweather', serif;
+    color: #2f5d50;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.section h4 {
+    color: #2f5d50;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.lista {
+    padding-left: 20px;
+}
+
+.lista li {
+    margin-bottom: 8px;
+}
+
+.citat {
+    border-left: 4px solid #2f5d50;
+    padding-left: 15px;
+    font-style: italic;
+    color: #555555;
+}
+
+.dugme {
+    display: inline-block;
+    background-color: #2f5d50;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.dugme:hover {
+    background-color: #24483e;
+}
+
+/* stilovi koji se ne koriste */
+.galerija {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galerija img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.baner {
+    background: linear-gradient(90deg, #2f5d50, #6fa38f);
+    height: 300px;
+}
+
+.kartica {
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #2f5d50;
+    color: #5e8a7d;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Reka Gradac</h1>
+    <p>Biser zapadne Srbije u blizini Valjeva</p>
+</div>
+
+<div class="nav">
+    <a href="#o-reci">O reci</a>
+    <a href="#priroda">Priroda</a>
+    <a href="#kanjon">Kanjon</a>
+    <a href="#posetioci">Za posetioce</a>
+    <a href="#kontakt">Kontakt</a>
+</div>
+
+<div class="container">
+
+    <div class="section" id="o-reci">
+        <h1>O reci Gradac</h1>
+        <p>Gradac je mala planinska reka u zapadnoj Srbiji koja izvire na obroncima planina južno od Valjeva i nakon dvadesetak kilometara toka uliva se u Kolubaru, upravo u samom gradu. Iako je kratka, Gradac je poznat širom zemlje po izuzetno čistoj i bistroj vodi, zbog čega ga mnogi nazivaju jednom od najčistijih reka u Srbiji.</p>
+        <p>Reka teče kroz slikovit krečnjački predeo, pa voda na pojedinim mestima ima neobičnu zelenkasto-plavu boju. Leti je prijatno sveža, a tokom cele godine privlači ljubitelje prirode, šetnje, ribolova i mira.</p>
+    </div>
+
+    <div class="section" id="priroda">
+        <h1>Bogatstvo prirode</h1>
+        <p>Čista voda Gradca dom je brojnim biljnim i životinjskim vrstama. Reka je posebno poznata po ribama kojima je potrebna hladna voda bogata kiseonikom, kao i po vidri, životinji koja živi samo uz očuvane i nezagađene vodotokove.</p>
+        <h4>Šta se može videti uz reku</h4>
+        <ul class="lista">
+            <li>Potočna pastrmka i druge vrste karakteristične za planinske reke</li>
+            <li>Vidra, pokazatelj zdrave i čiste sredine</li>
+            <li>Gusta listopadna šuma na strmim padinama kanjona</li>
+            <li>Brojne vrste ptica, leptira i retkih biljaka</li>
+        </ul>
+        <p class="citat">„Gradac nije samo reka, već mesto gde čovek ponovo nauči da sluša tišinu.“</p>
+    </div>
+
+    <div class="section" id="kanjon">
+        <h1>Kanjon i pećine</h1>
+        <p>Najlepši deo reke je njen kanjon, uzan i dubok, usečen u krečnjačke stene. Staze uz obalu vode pored brzaka, malih slapova i mirnih virova u kojima se vidi dno. U okolini kanjona nalaze se i pećine, od kojih je najpoznatija Degurićka pećina.</p>
+        <p>U dolini Gradca nalazi se i manastir Ćelije, jedno od značajnih duhovnih mesta ovog kraja. Spoj prirode i kulturnog nasleđa čini ovaj kraj posebnim i vrednim posete.</p>
+    </div>
+
+    <div class="section" id="posetioci">
+        <h1>Saveti za posetioce</h1>
+        <p>Gradac je lako dostupan iz Valjeva, a šetnja uz reku može da počne praktično iz samog grada. Za duže ture kroz kanjon preporučuje se udobna obuća i dovoljno vode.</p>
+        <h4>Kako sačuvati Gradac</h4>
+        <ul class="lista">
+            <li>Ne ostavljajte smeće u prirodi i ponesite svoj otpad sa sobom</li>
+            <li>Krećite se obeleženim stazama</li>
+            <li>Ne uznemiravajte životinje i ne berite zaštićene biljke</li>
+            <li>Poštujte pravila ribolova koja važe na reci</li>
+        </ul>
+        <p>Više informacija o turističkoj ponudi Valjeva možete pronaći <a href="https://www.tovaljevo.rs">ovde</a>.</p>
+    </div>
+
+    <div class="section" id="kontakt">
+        <h1>Kontakt</h1>
+        <p>Imate pitanje ili želite da podelite svoje utiske sa Gradca? Pišite nam.</p>
+        <a class="dugme" href="mailto:info@primer.rs">Klikni</a>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Reka Gradac. Sva prava zadržana.
+</div>
+
+</body>
+</html>
